@@ -16,7 +16,22 @@ export default function Creation() {
 
   <h2>Scripture</h2>
 <ul>
-  <li>Genesis 1:1</li>
+  <li style={{ marginBottom: 14 }}>
+  <details>
+    <summary style={{ cursor: "pointer" }}>Genesis 1:1</summary>
+
+    <div style={{ marginTop: 8, opacity: 0.75, fontSize: 14 }}>
+      “In the beginning God created the heaven and the earth.”
+    </div>
+
+    <div style={{ marginTop: 8 }}>
+      <a href="/bible/genesis-1-1" style={{ fontSize: 13, opacity: 0.85 }}>
+        EXPLORE
+      </a>
+    </div>
+  </details>
+</li>
+
   <li>Colossians 1:15–17</li>
   <li>Job 38:4–12</li>
   <li>Psalm 104:19–24</li>
