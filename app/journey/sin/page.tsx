@@ -8,10 +8,10 @@ export default function Sin() {
   src="/images/sin-header-wide.jpg"
   alt="Sin"
   style={{
-    width: "90%",
+    width: "100%",
     height: 240,
     objectFit: "cover",
-    objectPosition: "center 47%",
+    objectPosition: "center 46%",
     display: "block",
   }}
 />
