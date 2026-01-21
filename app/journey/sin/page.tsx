@@ -4,16 +4,18 @@ export default function Sin() {
       <a href="/">← Back</a>
 
       <div style={{ marginTop: 14, overflow: "hidden", borderRadius: 18 }}>
-        <img
-          src="/images/sin-header-wide.jpg"
-          alt="Sin"
-          style={{
-            width: "100%",
-            height: 240,
-            objectFit: "cover",
-            display: "block",
-          }}
-        />
+       <img
+  src="/images/sin-header-wide.jpg"
+  alt="Sin"
+  style={{
+    width: "90%",
+    height: 240,
+    objectFit: "cover",
+    objectPosition: "center 47%",
+    display: "block",
+  }}
+/>
+
       </div>
 
       <h1 style={{ marginTop: 20 }}>SIN</h1>
