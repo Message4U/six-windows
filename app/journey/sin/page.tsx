@@ -3,7 +3,20 @@ export default function Sin() {
     <main style={{ padding: 40, fontFamily: "system-ui, Arial" }}>
       <a href="/">← Back</a>
 
-      <h1>SIN</h1>
+      <div style={{ marginTop: 14, overflow: "hidden", borderRadius: 18 }}>
+        <img
+          src="/images/sin-header-wide.jpg"
+          alt="Sin"
+          style={{
+            width: "100%",
+            height: 240,
+            objectFit: "cover",
+            display: "block",
+          }}
+        />
+      </div>
+
+      <h1 style={{ marginTop: 20 }}>SIN</h1>
 
       <p>
         Humanity turned away from God, choosing independence over trust.
