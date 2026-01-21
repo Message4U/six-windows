@@ -20,26 +20,24 @@ export default function Home() {
       <section className="grid">
         {windows.map((w, idx) => (
           <a key={w.href} href={w.href} className="card" style={{ overflow: "hidden", padding: 0 }}>
-            <div style={{ position: "relative" }}>
-              <img
-                src={w.img}
-                alt={w.title}
-                style={{
-                  width: "100%",
-                  height: 140,
-                  objectFit: "cover",
-                  display: "block",
-                }}
-              />
-              <div style={{ position: "absolute", left: 12, top: 12 }}>
-                <span className="badge">Window {idx + 1}</span>
-              </div>
-            </div>
+            <div style={{ overflow: "hidden", borderRadius: 18 }}>
+  <img
+    src={w.img}
+    alt={w.title}
+    style={{
+      width: "100%",
+      height: 140,
+      objectFit: "cover",
+      display: "block",
+    }}
+  />
 
-            <div style={{ padding: 16 }}>
-              <div className="h1" style={{ marginTop: 6 }}>{w.title}</div>
-              <p className="p">{w.note}</p>
-            </div>
+  <div style={{ padding: 16 }}>
+    <div className="h1" style={{ marginTop: 6 }}>{w.title}</div>
+    <p className="p">{w.note}</p>
+  </div>
+</div>
+
           </a>
         ))}
       </section>
