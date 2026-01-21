@@ -5,7 +5,8 @@ export default function ExploreGenesis11() {
 
       <div className="card" style={{ overflow: "hidden", padding: 0, marginTop: 14 }}>
         <img
-          src="/images/creation.jpg"
+          src="/images/genesis-1-1.jpg"
+
           alt="Creation"
           style={{ width: "100%", height: 220, objectFit: "cover", display: "block" }}
         />
