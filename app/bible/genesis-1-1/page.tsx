@@ -57,9 +57,39 @@ export default function ExploreGenesis11() {
 
       <div className="card" style={{ marginTop: 14 }}>
         <div style={{ fontSize: 22, fontWeight: 800, lineHeight: 1.35 }}>
-          If life was given by a Creator with purpose, what happens when that purpose is ignored—or replaced?
+          If life was given by a Creator with purpose, what happens when that purpose is ignored — or replaced?
         </div>
       </div>
+<div className="card episodeCard" style={{ marginTop: 14 }}>
+  <img
+    className="episodeThumb"
+    src="/images/sin.jpg"
+    alt="SIN"
+  />
+
+  <div className="episodeMeta">
+    <div className="episodeTopline">
+      <span>UP NEXT</span>
+      <span>•</span>
+      <span>Window 2</span>
+      <span>•</span>
+      <span>Episode</span>
+    </div>
+
+    <div className="episodeTitleRow">
+      <h3 className="episodeTitle">SIN</h3>
+
+      <a className="playNext" href="/journey/sin">
+        ▶ Play Next
+      </a>
+    </div>
+
+    <div style={{ marginTop: 6, opacity: 0.85 }}>
+      What happens when we replace God’s purpose with our own?
+    </div>
+  </div>
+</div>
+
 
       <div style={{ marginTop: 18 }}>
         <a href="/journey/creation">← Back to CREATION</a>

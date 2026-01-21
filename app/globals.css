@@ -64,3 +64,107 @@ a:hover { text-decoration: underline; }
 
 .list { padding-left: 18px; color: var(--muted); }
 .footer { margin-top: 26px; color: var(--muted); font-size: 12px; }
+
+.episodeCard {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+.episodeThumb {
+  width: 180px;
+  height: 110px;
+  object-fit: cover;
+  display: block;
+}
+
+.episodeMeta {
+  padding: 14px 14px 14px 0;
+  flex: 1;
+}
+
+.episodeTopline {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.episodeTitleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.episodeTitle {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.playNext {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.14);
+  text-decoration: none;
+}
+
+.playNext:hover {
+  background: rgba(255,255,255,0.14);
+  text-decoration: none;
+}
+
+.playNext {
+  position: relative;
+  overflow: hidden;
+}
+
+.playNext::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,0.10),
+    rgba(255,255,255,0.35),
+    rgba(255,255,255,0.10)
+  );
+  animation: playProgress 3.5s ease-in-out infinite;
+}
+
+
+
+
+.playNext span {
+  position: relative;
+  z-index: 1;
+}
+@keyframes playProgress {
+  0% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+
+@media (max-width: 640px) {
+  .episodeCard { flex-direction: column; align-items: stretch; }
+  .episodeThumb { width: 100%; height: 160px; }
+  .episodeMeta { padding: 14px; }
+}
+
