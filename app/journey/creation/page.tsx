@@ -6,7 +6,8 @@ export default function Creation() {
       {/* HERO IMAGE */}
       <div className="card" style={{ overflow: "hidden", padding: 0, marginTop: 14 }}>
         <img
-          src="/images/creation.jpg"
+          src="/images/creation-header-la-beach.jpg"
+
           alt="Creation"
           style={{ width: "100%", height: 240, objectFit: "cover", display: "block" }}
         />
