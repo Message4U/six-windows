@@ -11,7 +11,7 @@ export default function ExploreGenesis11() {
           style={{ width: "100%", height: 220, objectFit: "cover", display: "block" }}
         />
         <div style={{ padding: 18 }}>
-          <span className="badge">EXPLORE</span>
+          
           <h1 className="h1" style={{ marginTop: 10 }}>Genesis 1:1</h1>
 
           <div style={{ marginTop: 10, opacity: 0.92 }}>
