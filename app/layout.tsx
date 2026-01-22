@@ -13,9 +13,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <a className="homeFab" href="/" aria-label="Home">
-          <span className="homeFabIcon">⌂</span>
-        </a>
+      <a className="homeFab" href="/" aria-label="Home">
+  <span className="homeFabIcon">⌂</span>
+  <span className="homeFabText">HOME</span>
+</a>
+
 
         {children}
       </body>
