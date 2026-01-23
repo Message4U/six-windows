@@ -6,7 +6,8 @@ export default function GenesisSixFive() {
       {/* HEADER IMAGE */}
       <div className="card" style={{ overflow: "hidden", padding: 0, marginTop: 14 }}>
         <img
-          src="/images/sin-header-wide.jpg"
+          src="/images/sin-explore-header.jpg"
+
           alt="Genesis 6:5"
           style={{
             width: "100%",
