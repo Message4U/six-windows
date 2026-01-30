@@ -19,7 +19,13 @@ export default function Home() {
 
       <section className="grid">
         {windows.map((w, idx) => (
-          <a key={w.href} href={w.href} className="card" style={{ overflow: "hidden", padding: 0 }}>
+        <a
+  key={w.href}
+  className="card homeCard"
+  href={w.href}
+>
+
+
             <div style={{ overflow: "hidden", borderRadius: 18 }}>
   <img
     src={w.img}
