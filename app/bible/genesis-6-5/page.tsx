@@ -64,26 +64,41 @@ export default function GenesisSixFive() {
     If God sees the heart, not just the behavior, what would He see shaping your thoughts when no one else is watching?
   </div>
 </div>
-{/* NEXT WINDOW */}
-<div className="card" style={{ marginTop: 24 }}>
-  <div className="episodeTitleRow">
-    <div>
-      <div style={{ opacity: 0.6, fontSize: 12, letterSpacing: 1 }}>
-        NEXT
-      </div>
-      <h3 className="episodeTitle">SEPARATION</h3>
+
+
+<div className="card episodeCard" style={{ marginTop: 24 }}>
+  <img
+    className="episodeThumb"
+    src="/images/judgement.png"
+    alt="JUDGEMENT"
+  />
+
+  <div className="episodeMeta">
+    <div className="episodeTopline">
+      <span>NEXT</span>
+      <span></span>
+   
     </div>
 
-    <a className="playNext" href="/journey/separation">
-      <span>▶ Play Next</span>
-    </a>
-  </div>
+    <div className="episodeTitleRow">
+      <h3 className="episodeTitle">JUDGEMENT</h3>
 
-  <div style={{ marginTop: 6, opacity: 0.85 }}>
-    What happens when sin breaks our connection with God?
+      <a className="playNext" href="/journey/judgement">
+        ▶ Play Next
+      </a>
+    </div>
+
+    <div style={{ marginTop: 6, opacity: 0.85 }}>
+      What happens when God responds to a world filled with sin?
+    </div>
   </div>
 </div>
+ <div style={{ marginTop: 18 }}>
+        <a href="/journey/sin">← Back to SIN</a>
+      </div>
+
 
     </main>
   );
 }
+
