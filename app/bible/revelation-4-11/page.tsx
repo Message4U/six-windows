@@ -1,7 +1,7 @@
 export default function ExploreGenesis11() {
   return (
     <main className="container">
-      <a className="back" href="/journey/creation">← Back</a>
+      <a className="back" href="/journey/creation">← Back to CREATION</a>
 
 
       <div className="card" style={{ overflow: "hidden", padding: 0, marginTop: 14 }}>
