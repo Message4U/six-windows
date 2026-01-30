@@ -67,20 +67,21 @@ export default function Judgement() {
             </div>
           </div>
 
-          {/* Romans 3:10–12 */}
-          <div className="card" style={{ flex: "1 1 220px" }}>
-            <a href="/bible/romans-3-10-12" style={{ textDecoration: "none" }}>
-              <span className="badge">EXPLORE</span>
-            </a>
+       {/* Luke 12:2–3 */}
+<div className="card" style={{ flex: "1 1 220px" }}>
+  <a href="/bible/luke-12-2-3" style={{ textDecoration: "none" }}>
+    <span className="badge">EXPLORE</span>
+  </a>
 
-            <div style={{ fontSize: 20, fontWeight: 800, marginTop: 10 }}>
-              Romans 3:10–12
-            </div>
+  <div style={{ fontSize: 20, fontWeight: 800, marginTop: 10 }}>
+    Luke 12:2–3
+  </div>
 
-            <div style={{ marginTop: 8, opacity: 0.75 }}>
-              “There is none righteous, no, not one…”
-            </div>
-          </div>
+  <div style={{ marginTop: 8, opacity: 0.75 }}>
+    “Nothing is covered that shall not be revealed…”
+  </div>
+</div>
+
         </div>
       </div>
 
@@ -94,35 +95,7 @@ export default function Judgement() {
         </ul>
       </div>
 
-      {/* NEXT WINDOW */}
-      <div className="card episodeCard" style={{ marginTop: 24 }}>
-        <img
-          className="episodeThumb"
-          src="/images/cross.jpg"
-          alt="CROSS"
-        />
-
-        <div className="episodeMeta">
-          <div className="episodeTopline">
-            <span>NEXT</span>
-            <span></span>
-          </div>
-
-          <div className="episodeTitleRow">
-            <h3 className="episodeTitle">CROSS</h3>
-
-            <a className="playNext" href="/journey/cross">
-              ▶ Play Next
-            </a>
-          </div>
-
-          <div style={{ marginTop: 6, opacity: 0.85 }}>
-            If judgement is deserved, what hope is left?
-          </div>
-        </div>
-      </div>
-
-
+   
     </main>
   );
 }
