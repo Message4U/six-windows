@@ -1,6 +1,6 @@
 "use client";
 
-export default function IsaiahFiftyThreeFive() {
+export default function JohnNineteenThirty() {
   return (
     <main className="container">
       <a className="back" href="/journey/cross">← Back to CROSS</a>
@@ -9,19 +9,19 @@ export default function IsaiahFiftyThreeFive() {
       <div className="card" style={{ overflow: "hidden", padding: 0, marginTop: 14 }}>
         <img
           src="/images/cross-header.png"
-          alt="Isaiah 53:5"
+          alt="John 19:30"
           style={{
             width: "100%",
             height: 240,
             objectFit: "cover",
-            objectPosition: "center 43%",
+            objectPosition: "center 55%",
             display: "block",
           }}
         />
         <div style={{ padding: 18 }}>
-          <h1 className="h1" style={{ marginTop: 10 }}>Isaiah 53:5</h1>
+          <h1 className="h1" style={{ marginTop: 10 }}>John 19:30</h1>
           <div style={{ opacity: 0.85, marginTop: 6 }}>
-            Jesus suffered in our place.
+            The work of salvation is complete.
           </div>
         </div>
       </div>
@@ -29,8 +29,8 @@ export default function IsaiahFiftyThreeFive() {
       {/* VERSE */}
       <div className="card" style={{ marginTop: 14 }}>
         <p className="p" style={{ fontStyle: "italic" }}>
-          “But he was wounded for our transgressions, he was bruised for our iniquities:
-          the chastisement of our peace was upon him; and with his stripes we are healed.”
+          “When Jesus therefore had received the vinegar, he said, It is finished:
+          and he bowed his head, and gave up the ghost.”
         </p>
       </div>
 
@@ -38,10 +38,9 @@ export default function IsaiahFiftyThreeFive() {
       <div className="card" style={{ marginTop: 14 }}>
         <h2 style={{ marginTop: 0 }}>What this verse is saying</h2>
         <p className="p" style={{ marginBottom: 0 }}>
-          Isaiah 53:5 is one of the clearest prophecies of the cross in the entire Bible. It explains that the
-          suffering of Jesus was not accidental or meaningless—it was substitution. He was wounded not for His own
-          sins, but for ours. The punishment that should have fallen on humanity fell on Him instead. The cross is
-          where God confronts sin seriously, but also provides healing through sacrifice.
+          John 19:30 records the final words of Jesus on the cross: “It is finished.” This was not a cry of defeat,
+          but a declaration of completion. The mission was accomplished. The debt of sin was paid. Everything needed
+          for salvation had been fully carried out. Jesus did not leave redemption half-done—He finished it completely.
         </p>
       </div>
 
@@ -49,17 +48,17 @@ export default function IsaiahFiftyThreeFive() {
       <div className="card" style={{ marginTop: 14 }}>
         <h2 style={{ marginTop: 0 }}>Why this matters for real life</h2>
         <p className="p" style={{ marginBottom: 0 }}>
-          Many people carry guilt, shame, and the sense that they must fix themselves before coming to God. This
-          verse flips that idea completely. Jesus did not come for the worthy—He came for the wounded. The cross
-          means you are not asked to pay for your sins twice. Healing begins not by pretending you are okay, but by
-          trusting the One who was crushed to bring you peace.
+          Many people live under constant pressure: to prove themselves, to fix their failures, to earn love, to make up
+          for the past. Jesus’ words cut through all of that: the work is finished. You do not add to what He completed.
+          Faith is not striving to become worthy—it is resting in what Christ has already done. The cross means the
+          payment is not pending. It is complete.
         </p>
       </div>
 
       {/* BIG FORWARD QUESTION */}
       <div className="card" style={{ marginTop: 14 }}>
         <div style={{ fontSize: 22, fontWeight: 800, lineHeight: 1.35 }}>
-          If Jesus suffered for what you deserve, what keeps you from receiving the peace He purchased?
+          If Jesus has finished the work, what are you still trying to carry on your own?
         </div>
       </div>
 
@@ -68,7 +67,7 @@ export default function IsaiahFiftyThreeFive() {
         <img
           className="episodeThumb"
           src="/images/resurrection.png"
-          alt="NEXT"
+          alt="RESURRECTION"
         />
 
         <div className="episodeMeta">
@@ -86,15 +85,17 @@ export default function IsaiahFiftyThreeFive() {
           </div>
 
           <div style={{ marginTop: 6, opacity: 0.85 }}>
-            How did Jesus take our place completely?
+            Death was not the end—what happened next?
           </div>
-
-
         </div>
       </div>
 
-<a className="back" href="/journey/cross">← Back to CROSS</a>
-      
+      <div style={{ marginTop: 18 }}>
+        <a href="/journey/cross">← Back to CROSS</a>
+      </div>
+
+  
+
     </main>
   );
 }

@@ -3,7 +3,7 @@
 export default function SecondCorinthiansFiveTwentyOne() {
   return (
     <main className="container">
-      <a className="back" href="/journey/cross">← Back</a>
+      <a className="back" href="/journey/cross">← Back to CROSS</a>
 
       {/* HEADER IMAGE */}
       <div className="card" style={{ overflow: "hidden", padding: 0, marginTop: 14 }}>
@@ -90,6 +90,7 @@ export default function SecondCorinthiansFiveTwentyOne() {
         </div>
       </div>
 
+ <a className="back" href="/journey/cross">← Back to CROSS</a>
      
     </main>
   );
