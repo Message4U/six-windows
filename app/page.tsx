@@ -1,11 +1,11 @@
 export default function Home() {
   const windows = [
-    { title: "CREATION", href: "/journey/creation", note: "God’s design", img: "/images/home-creation-la.jpg" },
+    { title: "CREATION", href: "/journey/creation", note: "God’s design", img: "/images/creation.png" },
     { title: "SIN", href: "/journey/sin", note: "Our turning away", img: "/images/sin-home-hq.jpg",},
     { title: "JUDGEMENT", href: "/journey/judgement", note: "Justice is real", img: "/images/judgement.png" },
     { title: "CROSS", href: "/journey/cross", note: "Jesus paid", img: "/images/cross.png" },
-    { title: "RESURRECTION", href: "/journey/resurrection", note: "New life", img: "/images/resurrection.jpg" },
-    { title: "RESPONSE", href: "/journey/response", note: "Receive Him", img: "/images/response.jpg" },
+    { title: "RESURRECTION", href: "/journey/resurrection", note: "New life", img: "/images/resurrection.png" },
+    { title: "RESPONSE", href: "/journey/response", note: "Receive Him", img: "/images/response.png" },
   ];
 
   return (
