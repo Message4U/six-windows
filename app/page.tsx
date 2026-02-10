@@ -1,7 +1,7 @@
 export default function Home() {
   const windows = [
-    { title: "CREATION", href: "/journey/creation", note: "God’s design", img: "/images/creation.png" },
-    { title: "SIN", href: "/journey/sin", note: "Our turning away", img: "/images/sin-home-hq.jpg",},
+    { title: "CREATION", href: "/journey/creation", note: "God’s design", img: "/images/CREATION.mp4" },
+    { title: "SIN", href: "/journey/sin", note: "Our turning away", img: "/images/sin-home-hq.jpg" },
     { title: "JUDGEMENT", href: "/journey/judgement", note: "Justice is real", img: "/images/judgement.png" },
     { title: "CROSS", href: "/journey/cross", note: "Jesus paid", img: "/images/cross.png" },
     { title: "RESURRECTION", href: "/journey/resurrection", note: "New life", img: "/images/resurrection.png" },
@@ -18,32 +18,49 @@ export default function Home() {
       </header>
 
       <section className="grid">
-        {windows.map((w, idx) => (
-        <a
-  key={w.href}
-  className="card homeCard"
-  href={w.href}
->
-
-
+        {windows.map((w) => (
+          <a
+            key={w.href}
+            className="card homeCard"
+            href={w.href}
+          >
             <div style={{ overflow: "hidden", borderRadius: 18 }}>
-  <img
-    src={w.img}
-    alt={w.title}
-    style={{
-      width: "100%",
-      height: 140,
-      objectFit: "cover",
-      display: "block",
-    }}
-  />
+              {w.title === "CREATION" ? (
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="metadata"
+                  style={{
+                    width: "100%",
+                    height: 140,
+                    objectFit: "cover",
+                    display: "block",
+                  }}
+                >
+                  <source src="/windows/creation.mp4" type="video/mp4" />
+                </video>
+              ) : (
+                <img
+                  src={w.img}
+                  alt={w.title}
+                  style={{
+                    width: "100%",
+                    height: 140,
+                    objectFit: "cover",
+                    display: "block",
+                  }}
+                />
+              )}
 
-  <div style={{ padding: 16 }}>
-    <div className="h1" style={{ marginTop: 6 }}>{w.title}</div>
-    <p className="p">{w.note}</p>
-  </div>
-</div>
-
+              <div style={{ padding: 16 }}>
+                <div className="h1" style={{ marginTop: 6 }}>
+                  {w.title}
+                </div>
+                <p className="p">{w.note}</p>
+              </div>
+            </div>
           </a>
         ))}
       </section>
