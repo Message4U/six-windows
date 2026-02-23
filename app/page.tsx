@@ -11,7 +11,7 @@ export default function Home() {
     { title: "CONSEQUENCES", href: "/journey/consequences", note: "Justice is real", img: "/images/CONSEQUENCE.mp4" },
     { title: "CROSS", href: "/journey/cross", note: "Jesus paid", img: "/images/CROSS.mp4" },
     { title: "RESURRECTION", href: "/journey/resurrection", note: "New life", img: "/images/Resurrection.mp4" },
-    { title: "RESPONSE", href: "/journey/response", note: "Receive Him", img: "/images/response.png" },
+    { title: "RESPONSE", href: "/journey/response", note: "Receive Him", img: "/images/CHOICES.mp4" },
   ];
 
   const videoRefs = useRef<Record<string, HTMLVideoElement | null>>({});
