@@ -1,9 +1,9 @@
 export default function Home() {
   const windows = [
-    { title: "CREATION", href: "/journey/creation", note: "God’s design", img: "/images/creation.png" },
-    { title: "SIN", href: "/journey/sin", note: "Our turning away", img: "/images/sin-home-hq.jpg" },
-    { title: "JUDGEMENT", href: "/journey/judgement", note: "Justice is real", img: "/images/judgement.png" },
-    { title: "CROSS", href: "/journey/cross", note: "Jesus paid", img: "/images/cross.png" },
+    { title: "CREATION", href: "/journey/creation", note: "God’s design", img: "/images/CREATION.mp4" },
+    { title: "SIN", href: "/journey/sin", note: "Our turning away", img: "/images/SIN.mp4" },
+    { title: "JUDGEMENT", href: "/journey/judgement", note: "Justice is real", img: "/images/CONSEQUENCE.mp4" },
+    { title: "CROSS", href: "/journey/cross", note: "Jesus paid", img: "/images/CROSS.mp4" },
     { title: "RESURRECTION", href: "/journey/resurrection", note: "New life", img: "/images/resurrection.png" },
     { title: "RESPONSE", href: "/journey/response", note: "Receive Him", img: "/images/response.png" },
   ];
@@ -25,8 +25,9 @@ export default function Home() {
             href={w.href}
           >
             <div style={{ overflow: "hidden", borderRadius: 18 }}>
-              {w.title === "CREATION" ? (
+              {w.img.endsWith(".mp4") ? (
                 <video
+                  src={w.img}
                   autoPlay
                   loop
                   muted
@@ -38,9 +39,7 @@ export default function Home() {
                     objectFit: "cover",
                     display: "block",
                   }}
-                >
-                  <source src="/windows/creation.mp4" type="video/mp4" />
-                </video>
+                />
               ) : (
                 <img
                   src={w.img}
