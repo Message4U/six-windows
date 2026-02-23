@@ -13,14 +13,13 @@ export default function Home() {
   ];
 
   useEffect(() => {
-    // Mobile Safari can ignore autoplay even when muted.
-    // This tries to start all videos after the page loads.
+    // Mobile Safari sometimes ignores autoplay; try to start videos after mount
     const videos = Array.from(document.querySelectorAll("video[data-autoplay='true']")) as HTMLVideoElement[];
     videos.forEach((v) => {
       v.muted = true;
-      v.playsInline = true;
+      (v as any).playsInline = true;
       const p = v.play();
-      if (p && typeof p.catch === "function") p.catch(() => {});
+      if (p && typeof (p as any).catch === "function") (p as any).catch(() => {});
     });
   }, []);
 
@@ -46,8 +45,6 @@ export default function Home() {
                   preload="auto"
                   disablePictureInPicture
                   controls={false}
-                  // These help iOS Safari behave:
-                  webkit-playsinline="true" as any
                   style={{
                     width: "100%",
                     height: 140,
