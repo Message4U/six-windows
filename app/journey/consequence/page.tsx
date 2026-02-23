@@ -14,7 +14,7 @@ export default function Judgement() {
         />
         <div style={{ padding: 18 }}>
           <span className="badge">Window 3</span>
-          <h1 className="h1" style={{ marginTop: 10 }}>JUDGEMENT</h1>
+          <h1 className="h1" style={{ marginTop: 10 }}>CONSEQUENCE</h1>
           <div style={{ opacity: 0.85, marginTop: 6 }}>
             God is just. Sin has consequences—and we cannot rescue ourselves.
           </div>
