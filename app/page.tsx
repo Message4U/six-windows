@@ -1,9 +1,11 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+
+type Win = { title: string; href: string; note: string; img: string };
 
 export default function Home() {
-  const windows = [
+  const windows: Win[] = [
     { title: "CREATION", href: "/journey/creation", note: "God’s design", img: "/images/CREATION.mp4" },
     { title: "SIN", href: "/journey/sin", note: "Our turning away", img: "/images/SIN.mp4" },
     { title: "CONSEQUENCES", href: "/journey/consequences", note: "Justice is real", img: "/images/CONSEQUENCE.mp4" },
@@ -12,15 +14,45 @@ export default function Home() {
     { title: "RESPONSE", href: "/journey/response", note: "Receive Him", img: "/images/response.png" },
   ];
 
-  useEffect(() => {
-    // Mobile Safari sometimes ignores autoplay; try to start videos after mount
-    const videos = Array.from(document.querySelectorAll("video[data-autoplay='true']")) as HTMLVideoElement[];
-    videos.forEach((v) => {
+  const videoRefs = useRef<Record<string, HTMLVideoElement | null>>({});
+
+  const tryPlayAll = () => {
+    Object.values(videoRefs.current).forEach((v) => {
+      if (!v) return;
+
+      // Ensure Safari sees these as properties too (not just JSX attrs)
       v.muted = true;
-      (v as any).playsInline = true;
+      v.playsInline = true;
+      v.autoplay = true;
+      v.loop = true;
+
       const p = v.play();
       if (p && typeof (p as any).catch === "function") (p as any).catch(() => {});
     });
+  };
+
+  useEffect(() => {
+    // Attempt autoplay immediately (works on many mobile browsers)
+    tryPlayAll();
+
+    // iOS Safari often requires a user gesture once per session.
+    // This starts videos on the first touch/scroll/click anywhere.
+    const unlock = () => {
+      tryPlayAll();
+      window.removeEventListener("touchstart", unlock);
+      window.removeEventListener("scroll", unlock);
+      window.removeEventListener("click", unlock);
+    };
+
+    window.addEventListener("touchstart", unlock, { passive: true });
+    window.addEventListener("scroll", unlock, { passive: true });
+    window.addEventListener("click", unlock);
+
+    return () => {
+      window.removeEventListener("touchstart", unlock);
+      window.removeEventListener("scroll", unlock);
+      window.removeEventListener("click", unlock);
+    };
   }, []);
 
   return (
@@ -36,7 +68,9 @@ export default function Home() {
             <div style={{ overflow: "hidden", borderRadius: 18 }}>
               {w.img.endsWith(".mp4") ? (
                 <video
-                  data-autoplay="true"
+                  ref={(el) => {
+                    videoRefs.current[w.href] = el;
+                  }}
                   src={w.img}
                   autoPlay
                   muted
